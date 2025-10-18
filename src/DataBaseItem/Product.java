@@ -32,6 +32,7 @@ public class Product extends DatabaseItem{
     public String lineRepresentation()
     {
         String line = productID+","+productName+","+manufacturerName+","+supplierName+","+quantity+","+price;
+        return line;
     }
     public String getSearchKey()
     {
