@@ -3,14 +3,23 @@ import java.util.ArrayList;
 import java.io.*;
 import java.util.Scanner;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class CustomerProduct extends DatabaseItem{
     private String customerSSN;
     private String productID;
     private LocalDate purchaseDate;
     private boolean paid;
-    public CustomerProduct(String customerSSN, String productID, LocalDate purchaseDate, boolean paid)
+    private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+    
+    public CustomerProduct(String customerSSN, String productID, LocalDate purchaseDate)
     {
+        this.customerSSN = customerSSN;
+        this.productID = productID;
+        this.purchaseDate = purchaseDate;
+        this.paid = false;
+    }
+    public CustomerProduct(String customerSSN, String productID, LocalDate purchaseDate, boolean paid) {
         this.customerSSN = customerSSN;
         this.productID = productID;
         this.purchaseDate = purchaseDate;
@@ -29,10 +38,7 @@ public class CustomerProduct extends DatabaseItem{
         return purchaseDate;
     }
     public String lineRepresentation(){
-        StringBuilder tmp = new StringBuilder(purchaseDate.toString());
-        tmp.reverse();
-        String line = customerSSN + "," + productID + "," + tmp;
-        return line;
+        return customerSSN + "," + productID + "," + purchaseDate.format(DATE_FORMATTER) + "," + paid;
     }
     public boolean isPaid()
     {
@@ -44,6 +50,6 @@ public class CustomerProduct extends DatabaseItem{
     }
     public String getSearchKey()
     {
-        return productID;
+        return customerSSN + "," + productID + "," + purchaseDate.format(DATE_FORMATTER);
     }
 }

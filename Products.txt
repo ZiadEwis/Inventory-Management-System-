@@ -1,0 +1,16 @@
+P1001,iPhone 15,Apple,TechDistributors Inc,27,999.99
+P1002,Galaxy S24,Samsung,Global Electronics,30,849.99
+P1003,MacBook Air,Apple,Computer World,15,1199.99
+P1004,ThinkPad X1,Lenovo,Business Solutions,20,1299.99
+P1005,PlayStation 5,Sony,Gaming Hub,10,499.99
+P1006,Xbox Series X,Microsoft,Gaming Hub,8,499.99
+P1007,iPad Pro,Apple,TechDistributors Inc,18,1099.99
+P1008,Surface Pro,Microsoft,Computer World,12,1249.99
+P1009,AirPods Pro,Apple,Audio Experts,35,249.99
+P1010,Noise Cancelling Headphones,Sony,Audio Experts,22,299.99
+P1011,Smart TV 55",Samsung,Home Electronics,14,799.99
+P1012,Wireless Router,TP-Link,Network Solutions,40,89.99
+P1013,External SSD,Samsung,Storage World,28,129.99
+P1014,Bluetooth Speaker,JBL,Audio Experts,34,79.99
+P1015,Gaming Mouse,Logitech,Gaming Hub,45,59.99
+3453245,dfgdfg,dfgdfg,dfgdfg,45,5.0

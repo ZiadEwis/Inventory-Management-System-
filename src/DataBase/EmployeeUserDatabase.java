@@ -1,5 +1,6 @@
 package DataBase;
 
+import DataBaseItem.EmployeeUser;
 import java.util.ArrayList;
 
 public class EmployeeUserDatabase extends BaseDatabase<EmployeeUser>{

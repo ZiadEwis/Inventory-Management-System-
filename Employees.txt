@@ -1,0 +1,11 @@
+E1001,John Smith,john.smith@retailstore.com,123 Main Street Alexandria,01234567890
+E1002,Sarah Johnson,sarah.j@retailstore.com,45 Nile Road Cairo,01234567891
+E1003,Mohamed Ali,mohamed.ali@retailstore.com,78 Green Plaza Giza,01234567892
+E1004,Emily Davis,emily.davis@retailstore.com,22 Park Avenue Heliopolis,01234567893
+E1005,Ahmed Hassan,ahmed.hassan@retailstore.com,15 Coastal Road Alexandria,01234567894
+E1006,Lisa Brown,lisa.brown@retailstore.com,90 Garden City Cairo,01234567895
+E1007,Mahmoud Fathy,mahmoud.fathy@retailstore.com,33 Downtown Street Alexandria,01234567896
+E1008,Jennifer Wilson,jennifer.w@retailstore.com,67 Zamalek Cairo,01234567897
+E1009,Omar Khaled,omar.khaled@retailstore.com,12 Mohandessin Giza,01234567898
+E1010,Sophia Miller,sophia.m@retailstore.com,54 Maadi Cairo,01234567899
+E1011,Omar El-Azab,omar.alazaab@gmail.com,Alexandria,01094210532

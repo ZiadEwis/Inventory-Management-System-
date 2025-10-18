@@ -11,7 +11,7 @@ public abstract class BaseDatabase<T> {
     public BaseDatabase(String filename) {
         this.filename = filename;
         this.records = new ArrayList<>();
-        
+        readFromFile();
     }
     
     protected abstract T createRecordFrom(String line);
@@ -62,7 +62,7 @@ public abstract class BaseDatabase<T> {
     public void saveToFile(){
         try(PrintWriter writer = new PrintWriter(new FileWriter(filename))){
             for(T record : records)
-                writer.print(getLineRepresentationFromRecord(record));
+                writer.println(getLineRepresentationFromRecord(record));
         }catch(IOException e){
             System.err.println("Error writting to file: " + filename);
         }

@@ -1,5 +1,6 @@
 package DataBase;
 
+import DataBaseItem.CustomerProduct;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 

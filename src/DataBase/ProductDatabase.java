@@ -1,5 +1,6 @@
 package DataBase;
 
+import DataBaseItem.Product;
 import java.util.ArrayList;
 
 public class ProductDatabase extends BaseDatabase<Product> {
@@ -28,7 +29,7 @@ public class ProductDatabase extends BaseDatabase<Product> {
      
     @Override
     public String getSearchKeyFromRecord(Product record){
-        return record.gerSearchKey();
+        return record.getSearchKey();
     }
     
     @Override
