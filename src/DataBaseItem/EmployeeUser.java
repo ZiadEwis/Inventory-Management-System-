@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.io.*;
 import java.util.Scanner;
 
-public class Product extends DatabaseItem {
+public class EmployeeUser extends DatabaseItem {
     private String employeeId;
     private String name;
     private String emai;
