@@ -37,6 +37,7 @@ public class CustomerProduct extends DatabaseItem{
     {
         return purchaseDate;
     }
+    @Override
     public String lineRepresentation(){
         return customerSSN + "," + productID + "," + purchaseDate.format(DATE_FORMATTER) + "," + paid;
     }
@@ -48,6 +49,7 @@ public class CustomerProduct extends DatabaseItem{
     {
         this.paid = paid;
     }
+    @Override
     public String getSearchKey()
     {
         return customerSSN + "," + productID + "," + purchaseDate.format(DATE_FORMATTER);

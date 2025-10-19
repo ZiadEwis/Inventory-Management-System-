@@ -32,11 +32,13 @@ public class Product extends DatabaseItem{
         if(quantity >= 0)
             this.quantity = quantity;
     }
+    @Override
     public String lineRepresentation()
     {
         String line = productID+","+productName+","+manufacturerName+","+supplierName+","+quantity+","+price;
         return line;
     }
+    @Override
     public String getSearchKey()
     {
         return productID;

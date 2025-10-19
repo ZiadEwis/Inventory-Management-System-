@@ -17,11 +17,13 @@ public class EmployeeUser extends DatabaseItem {
         this.address = address;
         this.phoneNumber = phoneNumber;
     }
+    @Override
     public String lineRepresentation()
     {
         String line = employeeId + "," + name + "," + email + "," + address + "," + phoneNumber;
         return line;
     }
+    @Override
     public String getSearchKey()
     {
         return employeeId;
