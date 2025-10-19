@@ -34,6 +34,7 @@ public class Product extends DatabaseItem{
         String line = productID+","+productName+","+manufacturerName+","+supplierName+","+quantity+","+price;
         return line;
     }
+    @Override
     public String getSearchKey()
     {
         return productID;

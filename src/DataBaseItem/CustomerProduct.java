@@ -42,6 +42,7 @@ public class CustomerProduct extends DatabaseItem{
     {
         this.paid = paid;
     }
+    @Override
     public String getSearchKey()
     {
         return productID;
