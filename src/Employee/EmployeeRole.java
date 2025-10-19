@@ -19,6 +19,11 @@ public class EmployeeRole {
         this.productDatabase = new ProductDatabase("Products.txt");
         customerProductDatabase = new CustomerProductDatabase("CustomersProducts.txt");
     }
+    
+    public void addProduct(String productID, String productName, String manufacturerName, String supplierName, int quantity) {
+        Product newProduct = new Product(productID, productName, manufacturerName, supplierName, quantity, 0.0f);
+        productDatabase.insertRecord(newProduct);
+    }
 
     public void addProduct(String productID, String productName, String manufacturerName, String supplierName, int quantity, float price) {
         Product newProduct = new Product(productID, productName, manufacturerName, supplierName, quantity, price);
