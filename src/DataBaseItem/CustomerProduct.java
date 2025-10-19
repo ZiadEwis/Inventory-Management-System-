@@ -10,12 +10,12 @@ public class CustomerProduct extends DatabaseItem{
     private String productID;
     private LocalDate purchaseDate;
     private boolean paid;
-    public CustomerProduct(String customerSSN, String productID, LocalDate purchaseDate, boolean paid)
+    public CustomerProduct(String customerSSN, String productID, LocalDate purchaseDate)
     {
         this.customerSSN = customerSSN;
         this.productID = productID;
         this.purchaseDate = purchaseDate;
-        this.paid = paid;
+        this.paid = false;
     }
     public String getCustomerSSN()
     {
@@ -46,6 +46,6 @@ public class CustomerProduct extends DatabaseItem{
     @Override
     public String getSearchKey()
     {
-        return productID;
+        return productID;//
     }
 }
