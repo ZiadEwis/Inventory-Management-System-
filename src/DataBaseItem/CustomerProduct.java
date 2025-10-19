@@ -1,4 +1,5 @@
 package DataBaseItem;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.io.*;
 import java.util.Scanner;
@@ -29,8 +30,8 @@ public class CustomerProduct extends DatabaseItem{
         return purchaseDate;
     }
     public String lineRepresentation(){
-        StringBuilder tmp = new StringBuilder(purchaseDate.toString());
-        tmp.reverse();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        String tmp = purchaseDate.format(formatter);
         String line = customerSSN + "," + productID + "," + tmp;
         return line;
     }
